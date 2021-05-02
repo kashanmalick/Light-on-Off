@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light On and Off</title>
+    <script src="app.js"></script>
+    <style>
+        .main {
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        .onclickLo {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            border-radius: 5px;
+            height: 35px;
+            font-weight: bolder;
+            color: white;
+            
+        }
+        .onbtnclick {
+            display: flex;
+            justify-content: center;
+        }
+        #btnlast{
+            margin-left: 47%;
+            width: 7%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Light ON and OFF Task</h2>
+    <div class="main">
+        <button onclick="lightOn()" style="background-color: green;">Turn on the Light</button>
+        <figure class="lightStyle">
+            <img id="offimage" src="./Images/lightoff.jpg" alt="Light Off">
+            <figcaption>
+                <p>light On and Off</p>
+            </figcaption>
+        </figure>
+        <button onclick="lightOff()" style="background-color: red;">Turn off the Light</button>
+    </div>
+    <div class="main2">
+        <h2>Click On Bulb Turn ON And OFF</h2>
+        <div class="onclickLo">
+            <img id="bndimg" src="./Images/lightoff.jpg" alt="Light Off" onclick="imgchange()">
+        </div>
+    <div class="main3">
+        <h2>Click On Button Turn ON And OFF light</h2>
+        <div class="onbtnclick">
+            <img id="lightoff" src="./Images/lightoff.jpg" alt="Light Off">
+        </div>
+        <button id="btnlast" style="background-color: Green;" onclick="onoffimg()">Turn ON</button>
+
+    </div>
+</body>
+
+</html>
